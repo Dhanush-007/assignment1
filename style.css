@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-image: url(https://i.pinimg.com/originals/bc/55/51/bc5551ac237a9ef4d8e9575662f2e106.gif);
+  padding: 0 10px;
+}
+.regform{
+  max-width: 500px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.regform .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #44eec9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.regform .form{
+  width: 100%;
+  
+}
+
+.regform .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.regform .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+   font-size: 14px;
+  
+}
+
+.regform .form .inputfield .input,
+.regform .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+ 
+}
+
+.regform .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+  
+}
+
+.regform .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.regform .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.regform .form .inputfield .custom_select select{
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.regform .form .inputfield .input:focus,
+.regform .form .inputfield .textarea:focus,
+.regform .form .inputfield .custom_select select:focus{
+  border: 1px solid #fec107;
+}
+
+.regform .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.regform .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.regform .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.regform .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000000;
+  display: block;
+  position: relative;
+}
+.regform .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.regform .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #2ecac2;
+}
+
+.regform .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.regform .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  border: 1px solid ;
+  background:  #1deb49;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.regform .form .inputfield .btn:hover{
+  background: #f1f125;
+}
+
+.regform .form .inputfield:last-child{
+  margin-bottom: 0;
+}
